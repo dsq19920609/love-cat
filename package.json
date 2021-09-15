@@ -1,21 +1,25 @@
 {
-  "private": true,
+  "private": false,
   "name": "love-cat",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "ts + react + less + dumi构建组件库",
+  "typings": "es/index.d.ts",
+  "main": "es/index.js",
   "scripts": {
     "start": "dumi dev",
-    "docs:build": "dumi build",
-    "docs:deploy": "gh-pages -d docs-dist",
+    "build:site": "rimraf doc-site && dumi build",
+    "preview:site": "rimraf doc-site && npm run build:site && serve doc-site",
+    "build:types": "rimraf lib esm && tsc -p tsconfig.build.json && cpr lib esm",
+    "docs:deploy": "gh-pages -d doc-site",
     "build": "father-build",
-    "deploy": "npm run docs:build && npm run docs:deploy",
+    "deploy": "npm run build:site && npm run docs:deploy",
     "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "clean": "rimraf lib esm dist"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
+  "files": [
+    "es"
+  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
@@ -28,15 +32,26 @@
     ]
   },
   "dependencies": {
-    "react": "^16.12.0"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
+    "@umijs/fabric": "^2.6.7",
     "@umijs/test": "^3.0.5",
-    "dumi": "^1.0.16",
+    "cpr": "^3.0.1",
+    "dumi": "^1.1.28",
     "father-build": "^1.17.2",
     "gh-pages": "^3.0.0",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
     "yorkie": "^2.0.0"
+  },
+  "resolutions": {
+    "@types/react": "16.14.10",
+    "@types/react-dom": "16.9.13"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   }
 }

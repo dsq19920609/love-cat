@@ -1,10 +1,22 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  title: 'love-cat',
-  favicon: 'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  logo: 'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  outputPath: 'docs-dist',
+  title: 'mini-ui',
+  favicon:
+    'https://avatars.githubusercontent.com/u/22748789?s=400&u=223f5ca2a5ca1a087bbc87b08d19b23ea5004e8e&v=4',
+  logo: 'https://avatars.githubusercontent.com/u/22748789?s=400&u=223f5ca2a5ca1a087bbc87b08d19b23ea5004e8e&v=4',
+  outputPath: 'doc-site',
   mode: 'site',
-  // more config: https://d.umijs.org/config
+  menus: {},
+  navs: [
+    null,
+    {
+      title: 'GitHub',
+      path: 'https://github.com/dsq19920609',
+    },
+  ],
+  alias: {},
+  chainWebpack() {},
+  dynamicImport: {},
+  exportStatic: {},
 });
