@@ -1,7 +1,6 @@
 {
-  "private": false,
   "name": "love-cat",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "ts + react + less + dumi构建组件库",
   "main": "dist/index.js",
   "unpkg": "dist/index.umd.js",
@@ -10,15 +9,24 @@
   "scripts": {
     "start": "dumi dev",
     "build:site": "rimraf doc-site && dumi build",
+    "build": "npm run clean && father-build",
     "preview:site": "rimraf doc-site && npm run build:site && serve doc-site",
-    "build:types": "rimraf lib esm && tsc -p tsconfig.build.json && cpr lib esm",
     "docs:deploy": "gh-pages -d doc-site",
-    "build": "father-build",
-    "deploy": "npm run build:site && npm run docs:deploy",
     "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "clean": "rimraf lib esm dist"
+    "clean": "rimraf lib es esm dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsq19920609/love-cat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsq19920609/love-cat/issues"
+  },
+  "homepage": "https://github.com/dsq19920609/love-cat#readme",
   "files": [
     "es",
     "dist"
@@ -35,6 +43,7 @@
     ]
   },
   "dependencies": {
+    "@babel/runtime": "^7.15.4",
     "antd": "^4.16.13",
     "prop-types": "^15.7.2"
   },

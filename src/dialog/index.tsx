@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import t from 'prop-types';
 import './style/index.less';
 
-const prefixCls = 'love-cat';
+const prefixCls = 'love-cat-dialog';
 
 interface DialogProps {
   /**

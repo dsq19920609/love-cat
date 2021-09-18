@@ -12,7 +12,7 @@ export interface AlertProps {
 
 export type KindMap = Record<Required<AlertProps>['kind'], string>;
 
-const prefixCls = 'love-cat';
+const prefixCls = 'love-cat-alert';
 
 const kinds: KindMap = {
   info: '#5352ED',

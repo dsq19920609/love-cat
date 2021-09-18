@@ -34,6 +34,7 @@ export default {
   ], // 额外的babel-plugins
   extraPostCSSPlugins: [], // 额外的postcss插件
   extraRollupPlugins: [], // 额外的rollup插件
+  runtimeHelpers: true,
   pkgs: [
     // 组件依赖构建顺序， 例如 a组件依赖于b组件，那么需要先编译 b,在编译a,则 这里可以控制组件编译顺序
   ],
