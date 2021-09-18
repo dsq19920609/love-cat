@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import './index.less';
+import './style/index.less';
 interface DialogProps {
   /**
    * @description 点击事件

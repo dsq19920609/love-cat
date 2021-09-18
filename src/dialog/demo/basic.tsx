@@ -1,5 +1,5 @@
 import React from 'react';
 import Dialog from '../index';
-import '../index.less';
+import '../style/index.less';
 
 export default () => <Dialog type="primary">dialog example</Dialog>;

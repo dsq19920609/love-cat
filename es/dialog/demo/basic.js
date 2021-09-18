@@ -1,6 +1,6 @@
 import React from 'react';
 import Dialog from '../index';
-import '../index.css';
+import '../style/index.css';
 export default (function () {
   return /*#__PURE__*/ React.createElement(
     Dialog,

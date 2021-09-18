@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './style/index.css';
 var prefixCls = 'love-cat';
 
 var Dialog = function Dialog(_ref) {

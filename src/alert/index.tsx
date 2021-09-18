@@ -1,6 +1,6 @@
 import React from 'react';
 import t from 'prop-types';
-import './index.less';
+import './style/index.less';
 
 export interface AlertProps {
   /**

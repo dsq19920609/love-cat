@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.less';
+import './style/index.less';
 export interface AlertProps {
   /**
    * @description Alert 的类型

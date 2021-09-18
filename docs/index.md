@@ -1,6 +1,6 @@
 ---
 hero:
-  title: mini-ui
+  title: love-cat
   desc: 基于dumi搭建的组件库
   actions:
     - text: 开始
@@ -14,5 +14,5 @@ features:
     desc: 使用dumi生成组件文档并部署
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
     title: 使用
-    desc: 编译输出cjs、esm、umd格式 , 支持组件的按需加载
+    desc: 编译输出cjs、esm、umd格式
 ---

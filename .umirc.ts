@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  title: 'mini-ui',
+  title: 'love-cat',
   favicon:
     'https://avatars.githubusercontent.com/u/22748789?s=400&u=223f5ca2a5ca1a087bbc87b08d19b23ea5004e8e&v=4',
   logo: 'https://avatars.githubusercontent.com/u/22748789?s=400&u=223f5ca2a5ca1a087bbc87b08d19b23ea5004e8e&v=4',

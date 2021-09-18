@@ -81,7 +81,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 import React from 'react';
 import t from 'prop-types';
-import './index.css';
+import './style/index.css';
 var prefixCls = 'love-cat';
 var kinds = {
   info: '#5352ED',
