@@ -3,8 +3,10 @@
   "name": "love-cat",
   "version": "1.0.1",
   "description": "ts + react + less + dumi构建组件库",
-  "typings": "es/index.d.ts",
-  "main": "es/index.js",
+  "main": "dist/index.js",
+  "unpkg": "dist/index.umd.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "scripts": {
     "start": "dumi dev",
     "build:site": "rimraf doc-site && dumi build",
@@ -18,7 +20,8 @@
     "clean": "rimraf lib esm dist"
   },
   "files": [
-    "es"
+    "es",
+    "dist"
   ],
   "gitHooks": {
     "pre-commit": "lint-staged"
