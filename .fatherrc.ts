@@ -27,7 +27,7 @@ export default {
       {
         // 配置antd的按需引入
         libraryName: 'antd',
-        libraryDirectory: 'es',
+        libraryDirectory: 'lib',
         style: true,
       },
     ],

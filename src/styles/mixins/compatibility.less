@@ -1,0 +1,13 @@
+.placeholder(@color: @input-placeholder-color) {
+  &::-moz-placeholder {
+    opacity: 1;
+  }
+
+  &::placeholder {
+    color: @color;
+  }
+
+  &:placeholder-shown {
+    text-overflow: ellipsis;
+  }
+}

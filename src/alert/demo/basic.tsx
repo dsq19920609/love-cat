@@ -1,5 +1,23 @@
 import React from 'react';
 import Alert from '../index';
-import '../style/index.less';
 
-export default () => <Alert kind="positive">这是一条警告提示</Alert>;
+export default () => {
+  const handleClose = () => {
+    alert('i am closing');
+  };
+
+  return (
+    <div>
+      <Alert kind="info">info</Alert>
+      <br />
+      <Alert kind="success">success</Alert>
+      <br />
+      <Alert kind="error" closable onClose={handleClose}>
+        error
+      </Alert>
+      <br />
+      <Alert kind="warning">warning</Alert>
+      <br />
+    </div>
+  );
+};

@@ -1,8 +1,29 @@
-@popupPrefix: love-cat-alert;
+@popupPrefix: ant-alert;
 
 .@{popupPrefix} {
-  padding: 20px;
-  color: white;
-  background: white;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.@{popupPrefix}-info {
+  border: 1px solid #91d5ff;
+}
+.@{popupPrefix}-success {
+  border: 1px solid #b7eb8f;
+}
+.@{popupPrefix}-error {
+  border: 1px solid #ffccc7;
+}
+.@{popupPrefix}-warning {
+  border: 1px solid #ffe58f;
+}
+
+.@{popupPrefix}-close {
+  position: absolute;
+  right: 20px;
 }
